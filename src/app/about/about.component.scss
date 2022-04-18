@@ -1,0 +1,19 @@
+.wrapper {
+  width: 50%;
+  height: 90%;
+  display: grid;
+  align-content: center;
+  margin: auto;
+}
+
+li {
+  margin-left: 1rem;
+
+  p {
+    display: inline;
+  }
+}
+
+.footer {
+    margin-top: 2rem;
+}

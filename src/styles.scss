@@ -1,1 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
+$blue: #00a2ed;
+
+*,
+*::after,
+*::before {
+  font-family: "Merriweather Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h2 {
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+button {
+  appearance: none;
+  padding: 0.5rem 2rem;
+  background-color: $blue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: darken($blue, 5%);
+    transition: background-color 0.5s;
+  }
+
+  &:active {
+    background-color: darken($blue, 10%);
+    transition: background-color 0.5s;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+  transition: color 0.5s;
+
+  &:hover {
+    color: darken($blue, 5%);
+    transition: color 0.5s;
+  }
+
+  &.active {
+    font-weight: 700;
+  }
+}

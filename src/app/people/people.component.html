@@ -1,0 +1,8 @@
+<div *ngIf="person$ | async as person" class="wrapper">
+  <div (mouseenter)="stopPerson()" (mouseleave)="startPerson()" class="wrapper__person">
+    <img src="{{ person.picture.large }}" alt="random image" />
+    <p>Hi, My name is</p>
+    <h1>{{ person.name.first }} {{ person.name.last }}</h1>
+  </div>
+  <button (click)="changePerson()">New</button>
+</div>
